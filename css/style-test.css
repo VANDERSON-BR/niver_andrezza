@@ -1,12 +1,10 @@
 body {
     font-family: Arial, sans-serif;
 }
-
 .galeria {
     text-align: center;
     padding: 20px;
 }
-
 .fotos {
     display: flex;
     flex-wrap: wrap;
@@ -14,7 +12,6 @@ body {
     gap:50px;
     margin:2rem 0rem;
 }
-
 .fotos img {
     width: calc(30% - 10px);
     height: auto;
@@ -23,11 +20,9 @@ body {
     transition: 0.3s ease;
     border-radius: 12px;
 }
-
 .fotos img:hover {
     transform: scale(1.1);
 }
-
 .modal {
     display: none;
     position: fixed;
@@ -40,12 +35,10 @@ body {
     background-color: rgba(0, 0, 0, 0.9);
     text-align: center;
 }
-
 .modal img {
     max-width: 80%;
     max-height: 80%;
 }
-
 .fechar {
     position: absolute;
     top: 20px;
@@ -56,7 +49,6 @@ body {
     cursor: pointer;
     transition: 0.3s;
 }
-
 .fechar:hover {
     color: red;
     cursor:pointer;
@@ -64,7 +56,26 @@ body {
     transform: scale(1.4);
 }
 
+/*Breakpoints*/
 
+@media screen and (max-width:678px) {
+   
+    .fotos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap:50px;
+        margin:2rem 0rem;
+    }
+    .fotos img {
+        width: calc(100%);
+        height: auto;
+        object-fit: cover;
+        cursor: pointer;
+        transition: 0.3s ease;
+        border-radius: 12px;
+    }
+}
 
 
 
