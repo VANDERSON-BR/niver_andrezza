@@ -41,7 +41,7 @@ body{
 #principal{
     margin: 3rem 10rem;
 }
-.principal_carta{
+.principal__carta{
     margin: 5rem 10rem;
 }
 .principal__conteudo{
@@ -103,20 +103,29 @@ body{
 }
 @media screen and (max-width:678px){
     #cabecalho{
-        margin-bottom: 15%;
+        margin-bottom: 10%;
     }
     #principal{
-        margin:0rem;
+        margin:0rem 2rem;
+    }
+    .principal__conteudo{
+        gap:50px;
+    }
+    .principal__carta{
+        margin:0rem 2rem;
     }
     .principal__conteudo__div__row{
         display: block;
         margin:3rem 0rem;
     }
     .principal__conteudo__div__img{
-        margin:2rem 0rem;
+        margin-top: 2rem;
     }
-    .principal__conteudo__div__fotos a{
-        width:45%;
+    .principal__conteudo__div__fotos img{
+        width: 100%;
+        border-radius: 12px;
+        margin: auto;
+        transition: 0.3s ease;
     }
     #rodape h3{
         font-size: 1rem;
@@ -126,3 +135,8 @@ body{
         margin-top: 15%;
     }
 }
+
+
+
+
+
