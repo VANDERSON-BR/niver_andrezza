@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-primaria: white;
+    --cor-secundaria: #FF5580;
+    --font-primaria: "Krona One", sans-serif;
+    --font-secundaria: "Montserrat", sans-serif;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    background-color:  var(--cor--primaria);
+    color: var(--cor--secundaria);
+}
+
+#cabecalho{
+    padding:2% 10%;
+    margin-bottom:2%;
+    background-color: var(--cor-secundaria);
+}
+.cabecalho__menu{
+    display: flex;
+    gap: 3rem;
+}
+.cabecalho__menu__links{
+    color:var(--cor-primaria);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: var(--font-secundaria);
+    align-self: center;
+    transition:  0.3s ease-in-out;
+}
+.cabecalho__menu__links:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+#principal{
+    margin: 0rem 10rem;
+}
+.principal__conteudo{
+    display: flex;
+    flex-direction: column;
+    gap:150px;
+}
+.principal__conteudo__div__row{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+.principal__conteudo__div__h1{
+    color:var(--cor-secundaria);
+    font-family: var(--font-primaria);
+    text-align: center;
+}
+.principal__conteudo__div__img{
+    width: 100%;
+    border-radius: 5%;
+}
+.principal__conteudo__div__p{
+    color:var(--cor-secundaria);
+    font-family: var(--font-secundaria);
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}   
+.principal__conteudo__div__fotos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    object-fit: cover; /* Corta o conteúdo extra para manter a proporção */
+    gap:50px;
+    margin:2rem 0rem;
+}
+
+.principal__conteudo__div__fotos img{
+    width:30%;  
+    border-radius:12px;
+    transition: 0.3s ease; /* Animação suave para o zoom */
+}
+.principal__conteudo__div__fotos img:hover{
+    box-shadow: 1px 1px 20px var(white);  
+    transform: scale(1.1); /* Aplica o zoom de 10% */
+    cursor:pointer;
+}
+#rodape{
+    text-align: center;
+    padding: 2% 10%;
+    background-color: var(--cor-secundaria);
+}
+#rodape h3{
+    color:var(--cor-primaria);
+    font-family: var(--font-primaria);
+}
+.respiro__footer{
+    margin-top:2%;
+}
+@media screen and (max-width:678px){
+    #cabecalho{
+        margin-bottom: 15%;
+    }
+    #principal{
+        margin:0rem;
+    }
+    .principal__conteudo__div__row{
+        display: block;
+        margin:3rem 0rem;
+    }
+    .principal__conteudo__div__img{
+        margin:2rem 0rem;
+    }
+    .principal__conteudo__div__fotos a{
+        width:45%;
+    }
+    #rodape h3{
+        font-size: 1rem;
+        padding: 2% 0%;
+    }
+    .respiro__footer{
+        margin-top: 15%;
+    }
+}
