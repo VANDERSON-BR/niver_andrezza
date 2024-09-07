@@ -134,6 +134,9 @@ body{
     .respiro__footer{
         margin-top: 15%;
     }
+    video{
+        display: none;
+    }
 }
 
 
